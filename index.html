@@ -1,29 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Impostor: Silence</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impostor: Silence</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 0px #ff004c, -2px -2px 0px #00fff7;
+  animation: glitch 1.5s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 2px #ff004c, -2px -2px #00fff7; }
+  25% { text-shadow: -2px 2px #ff004c, 2px -2px #00fff7; }
+  50% { text-shadow: 2px -2px #ff004c, -2px 2px #00fff7; }
+  75% { text-shadow: -2px -2px #ff004c, 2px 2px #00fff7; }
+  100% { text-shadow: 2px 2px #ff004c, -2px -2px #00fff7; }
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  backdrop-filter: blur(10px);
+}
+
+a {
+  color: #00fff7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: #ff004c;
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff3366;
+}
+</style>
+
 </head>
-<body style="font-family: Arial; text-align:center; margin:40px;">
+<body>
+
+<div class="container">
 
   <h1>Impostor: Silence</h1>
-  <p>Juego de palabras tipo impostor para jugar con amigos.</p>
 
-  <h2>Sobre el juego</h2>
-  <p>
-    Impostor: Silence es un juego social donde los jugadores deben descubrir al impostor 
-    a través de palabras relacionadas a una categoría.
-  </p>
+  <div class="card">
+    <h2>Sobre el juego</h2>
+    <p>
+      Juego de palabras tipo impostor para jugar con amigos.
+      Descubre quién es el impostor antes de que sea demasiado tarde.
+    </p>
+  </div>
 
-  <h2>Política de privacidad</h2>
-  <p>
-    <a href="https://github.com/frost-node/politica-impostor">
-      Ver política de privacidad
-    </a>
-  </p>
+  <div class="card">
+    <h2>Características</h2>
+    <p>✔ Múltiples categorías</p>
+    <p>✔ Temas personalizables</p>
+    <p>✔ Animaciones estilo glitch</p>
+  </div>
 
-  <h2>Contacto</h2>
-  <p>Email: frostnode.dev@gmail.com</p>
+  <div class="card">
+    <h2>Política de privacidad</h2>
+    <p>
+      <a href="https://github.com/frost-node/politica-impostor">
+  Ver política de privacidad
+      </a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Contacto</h2>
+    <p>Email: frostnode.dev@gmail.com</p>
+  </div>
+
+</div>
 
 </body>
 </html>
